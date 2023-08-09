@@ -69,3 +69,53 @@ Secret access key:
 - **Clean and Organized Structure:** Benefit from a clear project structure that separates configuration files, website content, and documentation. This makes collaboration and maintenance a breeze.
 
 
+
+## Terraform Commands
+
+This file contains the step-by-step instructions for using the Terraform commands to initialize, review, apply, and destroy a static website.
+
+### Initialize Terraform
+The first step is to initialize Terraform by running the following command:
+
+```tf
+terraform init
+```
+
+This will create a .terraform directory in the current directory and download the necessary Terraform modules.
+
+### Review and Apply
+Once Terraform is initialized, you can review the planned changes by running the following command:
+
+```tf
+terraform plan
+````
+
+This will output a detailed plan of the changes that Terraform will make. You can then review the plan and make any necessary changes.
+
+### To apply the Terraform configuration, run the following command:
+
+```tf
+terraform apply
+```
+
+This will create or update the resources specified in the Terraform configuration.
+
+### Access Your Website
+After applying the Terraform configuration, the S3 bucket will be created and the website content will be uploaded. You can access your static website at the following URL:
+
+```http
+http://<bucket-name>.s3-website-<aws-region>.amazonaws.com
+```
+
+
+### Clean Up
+
+To remove the resources created by Terraform, run the following command:
+
+```tf
+terraform destroy
+```
+
+This will delete the S3 bucket and the website content. You will be prompted to confirm the destruction.
+
+- Warning: This command will delete all of the resources created by Terraform. Make sure that you are sure you want to destroy the resources before running this command.
