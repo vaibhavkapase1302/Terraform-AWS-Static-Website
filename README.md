@@ -94,7 +94,7 @@ terraform validate
 This will output a message indicating whether the Terraform configuration is valid.
 
 
-### 4. Plan
+### 3. Plan
 Once Terraform is initialized, you can review the planned changes by running the following command:
 
 ```tf
@@ -102,7 +102,7 @@ terraform plan
 ````
 
 
-### 5. Apply the Terraform Configuration
+### 4. Apply the Terraform Configuration
 
 To apply the Terraform configuration, run the following command:
 
@@ -119,7 +119,7 @@ After applying the Terraform configuration, the S3 bucket will be created and th
 [http://myterraformprojectwebsite2.s3-website.ap-south-1.amazonaws.com](http://myterraformprojectwebsite2.s3-website.ap-south-1.amazonaws.com)
 
 
-### 6. Clean Up
+### 5. Clean Up
 
 To remove the resources created by Terraform, run the following command:
 
