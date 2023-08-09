@@ -42,7 +42,9 @@ aws configure
 ```
 
 ```bash 
-Access key ID:```
+Access key ID:
+```
 
 ```bash
-Secret access key:```
+Secret access key:
+```
