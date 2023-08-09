@@ -14,4 +14,5 @@ Before you begin, make sure you have the following:
 
    ```bash
    git clone https://github.com/your-username/Terraform-AWS-Static-Website.git
+   
    cd Terraform-AWS-Static-Website
