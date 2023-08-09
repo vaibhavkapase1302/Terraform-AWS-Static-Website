@@ -72,9 +72,9 @@ Secret access key:
 
 ## Terraform Commands
 
-This file contains the step-by-step instructions for using the Terraform commands to initialize, review, apply, and destroy a static website.
+This file contains step-by-step instructions for using the Terraform commands to initialize, review, apply, and destroy a static website.
 
-### Initialize Terraform
+### 1. Initialize Terraform
 The first step is to initialize Terraform by running the following command:
 
 ```tf
@@ -84,24 +84,27 @@ terraform init
 This will create a .terraform directory in the current directory and download the necessary Terraform modules.
 
 
-## Apply the Terraform Configuration
-
-To apply the Terraform configuration, run the following command:
+### 2. Validate the Terraform Configuration
+Before you apply any changes to your infrastructure, it is a good idea to validate the Terraform configuration first. This will help you to catch any errors in your configuration before you apply them. To validate the Terraform configuration, run the following command:
 
 ```tf
-terraform apply
+terraform validate
 ```
 
-### Review and Apply
+This will output a message indicating whether the Terraform configuration is valid.
+
+
+### 4. Plan
 Once Terraform is initialized, you can review the planned changes by running the following command:
 
 ```tf
 terraform plan
 ````
 
-This will output a detailed plan of the changes that Terraform will make. You can then review the plan and make any necessary changes.
 
-### To apply the Terraform configuration, run the following command:
+### 5. Apply the Terraform Configuration
+
+To apply the Terraform configuration, run the following command:
 
 ```tf
 terraform apply
@@ -116,7 +119,7 @@ After applying the Terraform configuration, the S3 bucket will be created and th
 [http://myterraformprojectwebsite2.s3-website.ap-south-1.amazonaws.com](http://myterraformprojectwebsite2.s3-website.ap-south-1.amazonaws.com)
 
 
-### Clean Up
+### 6. Clean Up
 
 To remove the resources created by Terraform, run the following command:
 
