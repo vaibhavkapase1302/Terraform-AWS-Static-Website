@@ -31,3 +31,18 @@ The project consists of Terraform code files that define and configure the AWS r
 - `index.html`, `error.html`, `profile.JPG`: Sample website content files that will be uploaded to the S3 bucket.
 - `README.md`: Provides project documentation and usage instructions.
 - `CONTRIBUTING.md` (optional): Guidelines for contributing to the project.
+
+
+
+## Configure AWS Credentials: 
+Ensure you have your AWS credentials set up. You can configure them using environment variables, the AWS CLI, or other appropriate methods.
+
+```bash 
+aws configure
+```
+
+```bash 
+Access key ID:```
+
+```bash
+Secret access key:```
