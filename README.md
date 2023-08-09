@@ -83,6 +83,15 @@ terraform init
 
 This will create a .terraform directory in the current directory and download the necessary Terraform modules.
 
+
+## Apply the Terraform Configuration
+
+To apply the Terraform configuration, run the following command:
+
+```tf
+terraform apply
+```
+
 ### Review and Apply
 Once Terraform is initialized, you can review the planned changes by running the following command:
 
