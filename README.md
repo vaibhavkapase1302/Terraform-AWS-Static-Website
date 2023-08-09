@@ -103,9 +103,9 @@ This will create or update the resources specified in the Terraform configuratio
 
 After applying the Terraform configuration, the S3 bucket will be created and the website content will be uploaded. You can access your static website at the following URL:
 
-```http
+```HTTP
 http://myterraformprojectwebsite2.s3-website.ap-south-1.amazonaws.com
-
+```
 
 ### Clean Up
 
